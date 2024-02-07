@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>너스콜 - 메인</title>
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script> 
+    <script src="js/custom.js"></script> 
+    <script src="js/nav.js"></script> 
+</head>
+<body>
+    <div class="nurseCall_wrap">
+        <div class="container">
+            <header id="header">
+                <div class="header_bg"></div> 
+                <div class="inner">
+                    <nav class="navbar">
+                        <div class="container">
+                            <a class="logo ani-item" href="/">
+                                <img src="img/logo.png" alt="logo">
+                            </a>
+                            <div id="navbarNav" class="ani-item">
+                                <ul class="navbar-nav clearfix">
+                                    <li class="nav-item">
+                                        <a href="sub/about.html">
+                                            <span class="fo_f">회사소개</span>
+                                        </a>
+                                        <ul class="sub_menu">
+                                            <li>
+                                                <a href="sub/about.html">연혁 <i></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="sub/certification.html">인증/재적재산권 <i></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="sub/location.html">오시는 길 <i></i></a>
+                                            </li>  
+                                                  
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item fo_f">
+                                        <a href="sub/program.html">
+                                            <span class="fo_f">제품소개</span>     
+                                        </a>  
+                                        <ul class="sub_menu">
+                                            <li>
+                                                <a href="#none">스마트 너스콜 <i></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">스마트 ID카드 <i></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">스마트 수수실 솔루션 <i></i></a>
+                                            </li>  
+                                            <li>
+                                                <a href="#none">기타 스마트 시스템 <i></i></a>
+                                            </li>                                    
+                                        </ul>                                     
+                                    </li>      
+                                    <li class="nav-item fo_f">
+                                        <a href="sub/program.html">
+                                            <span class="fo_f">솔루션</span>   
+                                        </a>
+                                        <ul class="sub_menu">
+                                            <li>
+                                                <a href="#none">너스콜 솔루션 <i></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">수술실 솔루션 <i></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">비상벨 솔루션 <i></i></a>
+                                            </li>  
+                                            <li>
+                                                <a href="#none">기타 솔루션 <i></i></a>
+                                            </li>                                    
+                                        </ul>
+                                    </li>      
+                                    <li class="nav-item fo_f">
+                                        <a href="#none">
+                                            <span class="fo_f">설치 갤러리</span>   
+                                        </a>
+                                        <ul class="sub_menu">
+                                            <li>
+                                                <a href="#none">너스콜 솔루션 <i></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">수술실 솔루션 <i></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">비상벨 솔루션 <i></i></a>
+                                            </li>  
+                                            <li>
+                                                <a href="#none">기타 솔루션 <i></i></a>
+                                            </li>                                    
+                                        </ul>
+                                    </li>     
+                                    <li class="nav-item fo_f">
+                                        <a href="#none">
+                                            <span class="fo_f">고객지원</span>   
+                                        </a>
+                                        <ul class="sub_menu">
+                                            <li>
+                                                <a href="#none">공지사항 <i></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">뉴스/새소식 <i></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none">설치실행단계 <i></i></a>
+                                            </li>  
+                                                                            
+                                        </ul>
+                                    </li>                              
+                                </ul>      
+                                <div class="my_cont">
+                                    <span class="fo_f">
+                                        <a href="#none" class="join">Join</a>
+                                        <!-- <a href="" class="mypage none">Mypage</a> -->
+                                    </span>
+                                    <span class="fo_f">
+                                        <a href="#none" class="login">Login</a>
+                                        <!-- <a href="" class="logout none">Logout</a> -->
+                                    </span>                                  
+                                </div>
+                                <button class="navbar-toggler" type="button">
+                                    <span class="hamburger-menu">
+                                        <span class="iconbar btn_line_01"></span>
+                                        <span class="iconbar btn_line_02"></span>           
+                                        <span class="iconbar btn_line_03"></span>           
+                                    </span>                    
+                                </button>                                                               
+                            </div>                                                           
+                        </div>
+                    </nav>  
+                </div> 
+            </header>              
+            <aside id="aside">     
+                <div class="aside_bg"></div>
+                <div id="lnb" class="navbar-nav_m full-menu">
+                    <ul>
+                        <li class="nav_f fo_f"><a href="#none" >회사소개 <i></i></a>
+                            <ul class="sub">
+          
+                                <li>
+                                    <a href="sub/about.html">연혁 </a>
+                                </li>
+                                <li>
+                                    <a href="sub/certification.html">인증/지적재산권 </a>
+                                </li>  
+                                <li>
+                                    <a href="sub/location.html">오시는 길 </a>
+                                </li>
+                            </ul>
+                        </li>                      
+                        <li class="nav_f fo_f"><a href="#none">제품소개 <i></i></a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#none">스마트 너스콜 <i></i></a>
+                                </li>
+                                <li>
+                                    <a href="#none">스마트 ID카드 <i></i></a>
+                                </li>
+                                <li>
+                                    <a href="#none">스마트 수수실 솔루션 <i></i></a>
+                                </li>  
+                                <li>
+                                    <a href="#none">기타 스마트 시스템 <i></i></a>
+                                </li>   
+                            </ul>
+                        </li>
+                        <li class="nav_f fo_f"><a href="#none">솔루션 </a>       
+                            <ul class="sub">
+                                <li>
+                                    <a href="#none">너스콜 솔루션 <i></i></a>
+                                </li>
+                                <li>
+                                    <a href="#none">수술실 솔루션 <i></i></a>
+                                </li>
+                                <li>
+                                    <a href="#none">비상벨 솔루션 <i></i></a>
+                                </li>  
+                                <li>
+                                    <a href="#none">기타 솔루션 <i></i></a>
+                                </li>
+                            </ul>                    
+                        </li>   
+                        <li class="nav_f fo_f"><a href="#none">설치 갤러리 </a>      
+                            <ul class="sub">
+                                <li>
+                                    <a href="#none">너스콜 솔루션 </a>
+                                </li>
+                                <li>
+                                    <a href="#none">수술실 솔루션 </a>
+                                </li>
+                                <li>
+                                    <a href="#none">비상벨 솔루션 </a>
+                                </li>  
+                                <li>
+                                    <a href="#none">기타 솔루션 </a>
+                                </li>   
+                            </ul>                    
+                        </li>   
+                        <li class="nav_f fo_f"><a href="#none">고객지원 </a>       
+                            <ul class="sub">
+                                <li>
+                                    <a href="#none">공지사항 </a>
+                                </li>
+                                <li>
+                                    <a href="#none">뉴스/새소식 </a>
+                                </li>
+                                <li>
+                                    <a href="#none">설치실행단계 </a>
+                                </li>  
+                            </ul>                    
+                        </li>                                 
+                    </ul>
+                </div>          
+            </aside>  
+            <main id="contents">
+                <section id="deps01" class="section">
+                    <h2 class="hidden">메인 비주얼</h2>
+                    <article>                   
+                        <div class="swiper main_Swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide01">
+                                    <div class="inner">
+                                        <div class="txt" data-aos="fade-up"
+                                        data-aos-duration="3000">
+                                            <h3 class="mf_big"><span class="regular">DIGITAL HEALTHCARE</h3>
+                                            <p class="mf_bom light">긴급한 상황에서의 신속한 대응을 위한 병원용 벨 시스템을<br>
+                                                개발하고 공급합니다.
+                                            </p>
+                                        </div>
+                                        <div class="icon_box">
+                                            <figure class="forst" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                                                <img src="img/main_visual_con01.png" alt="벨시스템01">
+                                            </figure>
+                                            <figure class="twost" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                                                <img src="img/main_visual_con02.png" alt="벨시스템02">
+                                            </figure>
+                                            <figure class="thost" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+                                                <img src="img/main_visual_con03.png" alt="벨시스템03">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide02">
+                                    <div class="inner">
+                                        <div class="txt" data-aos="fade-up"
+                                        data-aos-duration="3000">
+                                            <h3 class="mf_big"><span class="regular">DIGITAL HEALTHCARE</h3>
+                                            <p class="mf_bom light">긴급한 상황에서의 신속한 대응을 위한 병원용 벨 시스템을<br>
+                                                개발하고 공급합니다.
+                                            </p>
+                                        </div>
+                                        <div class="icon_box">
+                                            <figure class="forst"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                                                <img src="img/main_visual_con01.png" alt="벨시스템01">
+                                            </figure>
+                                            <figure class="twost"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                                                <img src="img/main_visual_con02.png" alt="벨시스템02">
+                                            </figure>
+                                            <figure class="thost"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+                                                <img src="img/main_visual_con03.png" alt="벨시스템03">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide03">
+                                    <div class="inner">
+                                        <div class="txt" data-aos="fade-up"
+                                        data-aos-duration="3000">
+                                            <h3 class="mf_big"><span class="regular">DIGITAL HEALTHCARE</h3>
+                                            <p class="mf_bom light">긴급한 상황에서의 신속한 대응을 위한 병원용 벨 시스템을<br>
+                                                개발하고 공급합니다.
+                                            </p>
+                                        </div>
+                                        <div class="icon_box">
+                                            <figure class="forst" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                                                <img src="img/main_visual_con01.png" alt="벨시스템01">
+                                            </figure>
+                                            <figure class="twost" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                                                <img src="img/main_visual_con02.png" alt="벨시스템02">
+                                            </figure>
+                                            <figure class="thost" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+                                                <img src="img/main_visual_con03.png" alt="벨시스템03">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>    
+                                <div class="swiper-slide slide04">
+                                    <div class="inner">
+                                        <div class="txt" data-aos="fade-up"
+                                        data-aos-duration="3000">
+                                            <h3 class="mf_big"><span class="regular">DIGITAL HEALTHCARE</h3>
+                                            <p class="mf_bom light">긴급한 상황에서의 신속한 대응을 위한 병원용 벨 시스템을<br>
+                                                개발하고 공급합니다.
+                                            </p>
+                                        </div>
+                                        <div class="icon_box">
+                                            <figure class="forst" data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay="300">
+                                                <img src="img/main_visual_con01.png" alt="벨시스템01">
+                                            </figure>
+                                            <figure class="twost" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                                                <img src="img/main_visual_con02.png" alt="벨시스템02">
+                                            </figure>
+                                            <figure class="thost" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+                                                <img src="img/main_visual_con03.png" alt="벨시스템03">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>                  
+                    </article>
+                </section>
+                <section id="deps02" class="section">
+                    <h2 class="hidden">스마트 너스콜 Product</h2>
+                    <article class="inner">
+                        <div class="flo">
+                            <div class="box">
+                                <div class="title">
+                                    <h3 class="mf_bbig bolder">Product</h3>
+                                    <p class="mf_bom">너스콜은 생명의 순간, 신속한 조치를 위해 벨 솔루션의 제품을 창출합니다.
+                                    </p>
+                                </div>
+                                <div class="cont">
+                                    <ul>
+                                        <li>
+                                            <figure class="tab-content active" data-content="1">
+                                                <img src="img/deps02_img.jpg" alt="스마트 너스콜">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="tab-content" data-content="2">
+                                                <img src="img/deps03_img01.jpg" alt="스마트 ID카드">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="tab-content" data-content="3">
+                                                <img src="img/deps02_img.jpg" alt="스마트 수술실">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="tab-content" data-content="4">
+                                                <img src="img/deps03_img02.jpg" alt="기타 스마트 시스템">
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                    <div class="txt_box">
+                                        <ol class="tabs">
+                                            <li class="active">
+                                                <a href="#!" class="tab mf_som" data-tab="1">스마트 너스콜</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="tab mf_som" data-tab="2">스마트 ID카드</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="tab mf_som" data-tab="3">스마트 수술실</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="tab mf_som" data-tab="4">기타 스마트 시스템</a>
+                                            </li>
+                                        </ol>
+                                        <div class="tab01 tab-content active" data-content="1">
+                                            <div class="txt">
+                                                <b class="mf_logn">Smart nurse call system</b>
+                                                <h3 class="mf_big">스마트 너스콜</h3>
+                                                <p class="mf_bom">스마트 너스콜에 관한 제품설명 및 상품설명 해주세요. 스마트 너스콜에 관한 제품설명 및 
+                                                    상품설명 해주세요. 스마트 너스콜에 관한 제품 설명 및 상품설명
+                                                </p>
+                                                <div class="btn">
+                                                    <a href="">더 알아보기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab02 tab-content" data-content="2">
+                                            <div class="txt">
+                                                <b class="mf_logn">Smart nurse call system</b>
+                                                <h3 class="mf_big">스마트 ID카드</h3>
+                                                <p class="mf_bom">스마트 너스콜에 관한 제품설명 및 상품설명 해주세요. 스마트 너스콜에 관한 제품설명 및 
+                                                    상품설명 해주세요. 스마트 너스콜에 관한 제품 설명 및 상품설명
+                                                </p>
+                                                <div class="btn">
+                                                    <a href="">더 알아보기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab03 tab-content" data-content="3">
+                                            <div class="txt">
+                                                <b class="mf_logn">Smart nurse call system</b>
+                                                <h3 class="mf_big">스마트 수술실</h3>
+                                                <p class="mf_bom">스마트 너스콜에 관한 제품설명 및 상품설명 해주세요. 스마트 너스콜에 관한 제품설명 및 
+                                                    상품설명 해주세요. 스마트 너스콜에 관한 제품 설명 및 상품설명
+                                                </p>
+                                                <div class="btn">
+                                                    <a href="">더 알아보기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab04 tab-content" data-content="4">
+                                            <div class="txt">
+                                                <b class="mf_logn">Smart nurse call system</b>
+                                                <h3 class="mf_big">기타 스마트 시스템</h3>
+                                                <p class="mf_bom">스마트 너스콜에 관한 제품설명 및 상품설명 해주세요. 스마트 너스콜에 관한 제품설명 및 
+                                                    상품설명 해주세요. 스마트 너스콜에 관한 제품 설명 및 상품설명
+                                                </p>
+                                                <div class="btn">
+                                                    <a href="" class="mf_lom">더 알아보기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section id="deps03" class="section clearfix">
+                    <h2 class="hidden">너스콜 Gallery</h2>
+                    <article class="inner">
+                        <div class="title">
+                            <h3 class="mf_bbig bolder">Gallery</h3>
+                            <p class="mf_bom">여러 곳에서 다양하게 활용한 설치사례를 만나보세요.
+                            </p>
+                            <div class="btn">
+                                <a href="" class="mf_lom">더 알아보기</a>
+                            </div>
+                        </div>
+                        <div class="flo">
+                            <div class="swiper deps03_Swiper">
+                                <div class="deps03_arrow inner">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">    
+                                        <figure class="slide-inner">
+                                            <a href="">
+                                                <img src="img/deps03_img02.jpg" alt="썸네일">
+                                            </a>
+                                        </figure>                                    
+                                        <div class="txt">         
+                                            <a href="">
+                                                <small class="mf_lom">스마트 ID카드</small>                               
+                                                <h3 class="mf_som">홍길동 대학병원 소아청소년과</h3>
+                                                <span class="arrow">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div> 
+                                    <div class="swiper-slide">    
+                                        <figure class="slide-inner">
+                                            <a href="">
+                                                <img src="img/deps03_img01.jpg" alt="썸네일">
+                                            </a>
+                                        </figure>                                    
+                                        <div class="txt">         
+                                            <a href="">
+                                                <small class="mf_lom">스마트 ID카드</small>                               
+                                                <h3 class="mf_som">홍길동 대학병원 소아청소년과</h3>
+                                                <span class="arrow">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div> 
+                                    <div class="swiper-slide">    
+                                        <figure class="slide-inner">
+                                            <a href="">
+                                                <img src="img/deps03_img02.jpg" alt="썸네일">
+                                            </a>
+                                        </figure>                                    
+                                        <div class="txt">         
+                                            <a href="">
+                                                <small class="mf_lom">스마트 ID카드</small>                               
+                                                <h3 class="mf_som">홍길동 대학병원 소아청소년과</h3>
+                                                <span class="arrow">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div> 
+                                    <div class="swiper-slide">    
+                                        <figure class="slide-inner">
+                                            <a href="">
+                                                <img src="img/deps03_img01.jpg" alt="썸네일">
+                                            </a>
+                                        </figure>                                    
+                                        <div class="txt">         
+                                            <a href="">
+                                                <small class="mf_lom">스마트 ID카드</small>                               
+                                                <h3 class="mf_som">홍길동 대학병원 소아청소년과</h3>
+                                                <span class="arrow">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div> 
+                                    <div class="swiper-slide">    
+                                        <figure class="slide-inner">
+                                            <a href="">
+                                                <img src="img/deps03_img02.jpg" alt="썸네일">
+                                            </a>
+                                        </figure>                                    
+                                        <div class="txt">         
+                                            <a href="">
+                                                <small class="mf_lom">스마트 ID카드</small>                               
+                                                <h3 class="mf_som">홍길동 대학병원 소아청소년과</h3>
+                                                <span class="arrow">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>     
+                                    <div class="swiper-slide">    
+                                        <figure class="slide-inner">
+                                            <a href="">
+                                                <img src="img/deps03_img01.jpg" alt="썸네일">
+                                            </a>
+                                        </figure>                                    
+                                        <div class="txt">         
+                                            <a href="">
+                                                <small class="mf_lom">스마트 ID카드</small>                               
+                                                <h3 class="mf_som">홍길동 대학병원 소아청소년과</h3>
+                                                <span class="arrow">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>                         
+                                </div>
+                            </div>      
+                        </div>
+                    </article>                
+                </section>
+                
+               
+                <section id="deps04" class="section">
+                    <h2 class="hidden">너스콜 뉴스</h2>
+                    <article class="inner">
+                        <div class="title">                            
+                            <h3 class="mf_bbig bolder">News</h3>
+                            <p class="mf_bom">너스콜의 새로운 소식 전해드립니다.
+                            </p>
+                            <div class="btn">
+                                <a href="" class="mf_lom">더 알아보기</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="box">
+                                    <div class="txt">
+                                        <small class="date mf_lom">2023.08.29</small>
+                                        <a href="">
+                                            <strong class="subject mf_som">SBS 드라마 [TITLE] 너스콜 제품협찬</strong>
+                                        </a>
+                                    </div>
+                                    <figure>
+                                        <a href="">
+                                            <img src="img/deps04_img01.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <div class="txt">
+                                        <small class="date mf_lom">2023.08.29</small>
+                                        <a href="">
+                                            <strong class="subject mf_som">SBS 드라마 [TITLE] 너스콜 제품협찬</strong>
+                                        </a>
+                                    </div>
+                                    <figure>
+                                        <a href="">
+                                            <img src="img/deps04_img01.jpg" alt="">
+                                        </a>
+                                    </figure>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box">
+                                    <div class="txt">
+                                        <small class="date mf_lom">2023.08.29</small>
+                                        <a href="">
+                                            <strong class="subject mf_som">SBS 드라마 [TITLE] 너스콜 제품협찬</strong>
+                                        </a>
+                                    </div>
+                                    <figure>
+                                        <a href="">
+                                            <img src="img/deps04_img02.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section id="deps05" class="section">
+                    <h2 class="hidden">너스콜 Location</h2>
+                    <article class="inner">
+                        <div class="title">                          
+                            <h3 class="mf_bbig bolder">Location</h3>
+                            <p class="mf_bom">너스콜은 언제나 고객만족을 위하여 최선을 다하고 있습니다.</p>
+                        </div>
+                        <div class="address">
+                            <ul>
+                                <li>
+                                    <div class="txt">
+                                        <i><img src="img/address_con.png" alt="주소"></i>
+                                        <p class="mf_bom">경기도 성남시 중원구 돈촌대로 555
+                                            (상대원동 선일테크노피아), 5F
+                                        </p>                                       
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="txt">
+                                        <i><img src="img/call_con.png" alt="전화"></i>
+                                        <p class="mf_bom">상담문의 031-730-5821-5823, 842<br>
+                                            A/S센터 031-730-5801~5807
+                                        </p>                                       
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="map_area">
+                            <div id="daumRoughmapContainer1702456488476" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp" : "1702456488476",
+                                    "key" : "2h7wp",
+                                    "mapHeight" : "400"
+                                }).render();
+                            </script>
+                        </div>
+                    </article>
+                </section>
+
+            </main>      
+            <footer id="footer">    
+                <div id="deps06" class="section">
+                    <h2 class="hidden">너스콜 Contact us</h2>
+                    <article class="inner">
+                        <div class="title">                    
+                            <p class="mf_bom">Contact us</p>      
+                            <h3 class="mf_xom bolder">TEXT</h3>     
+                        </div>
+                        <div class="btn_box">
+                            <a href="" class="mf_bom">설치 견적문의</a>
+                        </div>                       
+                    </article>
+                </div>
+                <div class="f_box">        
+                    <div class="inner">
+                        <div class="flex f1">
+                            <h2 id="f_logo">
+                                <a href="/">
+                                    <img src="img/logo.png" alt="푸터로고">
+                                </a>
+                            </h2>                          
+                            <div class="address">
+                                <div class="agree_box">
+                                    <a href="">개인정보취급방침</a>
+                                </div>
+                                <div class="fo_default">
+                                    <p>경기도 성남시 중원구 둔촌대로 555 (상대원동 선일테크노피아), 5F  <i></i>  전화번호 031-730-5821~5823, 842, 844
+                                    </p>
+                                    <p>
+                                        A/S센터 031-730-5801~5807   <i></i>   FAX SI영업 031-777-3511ㆍ제품영업 031-777-3512
+                                    </p>                          
+                                </div>        
+                                <p class="copyright fo_copy">COPYRIGHT 2023©너스콜. All rights reserved. </p>                                        
+                            </div> 
+                            <div class="qr_box">
+                                <img src="img/qr_con.png" alt="큐알아이콘">
+                            </div>      
+                        </div>       
+         
+                    </div>                     
+                </div>                  
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

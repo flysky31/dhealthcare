@@ -162,7 +162,7 @@ div.btn{
     }
 
     .slide01{
-        background: url("/img/main_visual01.jpg")no-repeat center/cover;           
+        background: url("../img/main_visual01.jpg")no-repeat center/cover;           
         width: 100%;  
         position: relative;
         transition: all 12s;  
@@ -191,7 +191,7 @@ div.btn{
    
  
     .slide02{
-        background: url("/img/main_visual02.jpg")no-repeat center/cover;
+        background: url("../img/main_visual02.jpg")no-repeat center/cover;
         width: 100%;  
         position: relative;
         transition: all 12s; 
@@ -218,7 +218,7 @@ div.btn{
         }
     }
     .slide03{
-        background: url("/img/main_visual03.jpg")no-repeat center/cover;
+        background: url("../img/main_visual03.jpg")no-repeat center/cover;
         width: 100%;  
         position: relative;
         transition: all 12s;   
@@ -244,7 +244,7 @@ div.btn{
         }
     }
     .slide04{
-        background: url("/img/main_visual04.jpg")no-repeat center/cover;
+        background: url("../img/main_visual04.jpg")no-repeat center/cover;
         width: 100%;  
         position: relative;
         transition: all 12s;   
@@ -600,7 +600,7 @@ div.btn{
 }
 
 #deps06{
-    background: url("/img/deps06_bg.jpg")no-repeat center/cover;
+    background: url("../img/deps06_bg.jpg")no-repeat center/cover;
     width: 100%;
     padding:50px 0;
     .inner{

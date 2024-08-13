@@ -14,12 +14,6 @@
 }
 
 
-
-
-
-
-
-
 .s_fix{
     font-size: 3.75rem;
 }
@@ -548,6 +542,7 @@
             &.depth05{
                 &:after{
                     content: "2018~\A2019";
+                    white-space:pre; 
                     position: absolute;
                     top: 0;
                     left: 50%;
@@ -592,6 +587,7 @@
             &.depth07{
                 &:after{
                     content: "2015~\A2016";
+                    white-space:pre; 
                     position: absolute;
                     top: 0;
                     left: 50%;
@@ -658,6 +654,7 @@
             &.depth10{
                 &:after{
                     content: "2005~\A2009";
+                    white-space:pre; 
                     position: absolute;
                     top: 0;
                     left: 50%;

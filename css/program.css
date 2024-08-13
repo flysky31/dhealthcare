@@ -30,7 +30,7 @@
 #bo-cate li:last-child:after{display: none;}
 #bo-cate a{display:block;line-height:28px;padding:7px 15px;color:#999;position: relative;transition:all 0.3s ease-out;font-size: 1.125rem;border-radius: 20px;}
 #bo-cate a:focus, #bo-cate a:hover, #bo-cate a:active {text-decoration:none;background:#003B82;color:#fff;}
-#bo-cate #bo_cate_on{z-index:2;background:#003B82;color:#fff;font-weight:bold;border-radius: 20px;}
+#bo-cate .tab.active{z-index:2;background:#003B82;color:#fff;font-weight:bold;border-radius: 20px;}
 
 
 /* 게시판 목록 공통 */
@@ -140,7 +140,8 @@
 	.bo-admin-select-wrap.active .btn-bo-admin-select:after{width: 100%;}
 
 
-
+.tab-pane{display:none;}
+.tab-pane.active{display:block;}
 .gallery-list{margin: 100px -15px 0;display: flex;flex-wrap:wrap;}
 .gallery-list li{width: 25%;padding: 10px;padding-bottom: 30px;margin:0 0 50px 0;}
 .gallery-list li a{display: block;position: relative;transition:all ease-out .3s;}

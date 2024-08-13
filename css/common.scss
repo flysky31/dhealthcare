@@ -6,7 +6,7 @@
 }
 
 .fo_f{
-    font-size: 1.375rem;
+    font-size: 1.125rem;
 }
 .fo_default{
     font-size: 1rem;
@@ -40,8 +40,22 @@ body{
     background: #fff;
     transition: background 1s;    
     box-shadow: 0px 3px 10px rgba(0,0,0,.1);
-      
-
+    .lang_btn{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        >ul{width: 115px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 50px;
+        }
+    }
+    @media(max-width:1028px){
+        .lang_btn{
+            display: none;
+        }
+    }
         &.on{
 
         }
@@ -85,9 +99,7 @@ body{
                         width: 80%;
                         opacity: 1;
                         transition: opacity 500ms ease;
-                        &.on{
-                            opacity: 0;
-                        }
+                 
                     }
                     .my_cont{
                         span{
@@ -124,6 +136,9 @@ body{
                                 >a{
                                     font-weight: 700;
                                     color: #003B82;
+                                    &:after{
+                                        width: 75px;
+                                    }
                                 }
                             }
                             >a{
@@ -143,7 +158,7 @@ body{
                                     height: 4px;
                                     background: #003B82;
                                     position: absolute;
-                                    bottom: 2px;
+                                    bottom: -1px;
                                     left: 50%;
                                     transform: translateX(-50%);
                                     transition: width 500ms linear;
@@ -158,14 +173,14 @@ body{
                             .sub_menu{
                                 position: absolute;
                                 top: 0;
-                                left:50%;
-                                transform:translateX(-50%);
+                                left: 50%;
                                 text-align: center;
-                                width: 210px;                               
+                                width: 210px;
+                                transform: translateX(-50%);                             
                                 background: rgba(255,255,255,1);
                                 height: auto;           
                                 z-index: -1;
-                                padding: 91px 0 0;                 
+                                padding: 88px 0 0;                 
                                 transition: opacity .5s;                            
                                 transition: background 1s;                         
                                 display: none;
@@ -212,8 +227,8 @@ body{
                         display: none;
                         &.on{
                             .btn_line_01{
-                                transform: rotateZ(-45deg) translate3d(-6px, 8px, 0);
-                                width: 25px;
+                                transform: rotateZ(-45deg) translate3d(-5.5px, 8px, 0);
+                                width: 22px;
                             }
                             .btn_line_02{
                                 opacity: 0;
@@ -221,7 +236,7 @@ body{
                             }
                             .btn_line_03{
                                 transform: rotateZ(45deg) translate3d(-3px, -6px, 0);
-                                width: 25px;
+                                width: 22px;
                             }
                             .hamburger-menu{
                                 &:hover{
@@ -229,11 +244,11 @@ body{
                                         &.iconbar{
                                         
                                             &.btn_line_01{
-                                                width: 25px;
+                                                width: 22px;
                                             }
                                         
                                             &.btn_line_03{
-                                                width: 25px;
+                                                width: 22px;
                                             }
                                         }
                                     }
@@ -382,40 +397,55 @@ body{
         right: -120%;
         transition: 0.5s;
         top: 0;
-        padding: 85px 0px;
+        padding: 65px 0px 0;
         width: 40%;
         height: 100%;
         box-sizing: border-box;
         background-color: rgba(0, 59, 130,1);
         z-index: 50;
         overflow-y: scroll;
-        li{
+        .lang_btn_2{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            >ul{width: 115px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                height: 50px;
+            }
+        }
+        >ul{ 
+            li{
             border-bottom: 1px solid rgba(255,255,255,.5);
-            margin: 0 0 20px 0;
+            
             &:last-child{
                 margin: 0;
             }
             a{
                 color: #eee;
                 font-weight: 600;
-                padding: 0 30px 20px;
+                padding: 20px 30px 20px;
             }
             .sub{
-                padding: 20px 50px;
+                padding: 0;
                 border-top: 1px solid rgba(255,255,255,.5);
                 a{
                     font-weight: 400;
                     padding: 0;
                 }
                 li{
-                    margin: 0  0 25px 0;
-                    border-bottom: 0;
+                   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                    padding: 18px 40px;
+                    margin: 0;
                     &:last-child{
                         margin: 0;
+                        border-bottom: 0;
                     }
                 }
             }
-        }
+        }}
+       
     }
 }
 
@@ -431,7 +461,7 @@ body{
        
         max-width: 100%;
         position: relative;
-        margin: 80px auto;
+        padding: 80px 0;
 
         .flex{
             display: flex;
@@ -536,10 +566,8 @@ body{
 
 /* ======================= 1600 =============================*/
 @include breakpoint_desktop_1600{
-    .fo_f{
-        font-size: 1.1rem;
-    }
-
+   
+ 
     #header{
         height: 80px;
         .navbar {
@@ -550,12 +578,15 @@ body{
                 }
                 #navbarNav {
                     ul {
+                        &.navbar-nav{
+                            margin: 0 5% 0 0;
+                        }
                         > li {
                             
                             &.nav-item{
-                                width: 18%;
+                                width: 20%;
                                 .sub_menu{
-
+                                    padding: 85px 0 0;
                                 }
                               
                             }
@@ -662,7 +693,7 @@ body{
         font-size: 1.1rem;
     }
 
-
+    
     #header {
         height: 65px;
         .navbar {
@@ -678,7 +709,15 @@ body{
                         li{
                             
                             &.nav-item {      
-                                width: 20%;                          
+                                width: 20%;     
+                                a{
+                                    &:after{
+                                        bottom: 10px;
+                                    }
+                                }
+                                .sub_menu{
+                                    padding: 75px 0 0;
+                                }                     
                             }
                         }
                     }
@@ -706,7 +745,7 @@ body{
                     }
                 }
                 #f_logo{
-                    width: 130px;
+                    width: 150px;
                 }
             }
         }
@@ -742,7 +781,9 @@ body{
         .navbar {
             
             .container {
+                justify-content: space-between;
                 #navbarNav {
+                    width: auto;
                     .navbar-nav{
                         display: none;
                     }
@@ -818,11 +859,11 @@ body{
      
     #footer {
         .inner{
-            margin: 50px auto;
+            padding: 50px 0;
             .qr_box{
                 width: 60px;
                 position: absolute;
-                top: 0;
+                top: 50px;
                 right: 0;
             }
             .flex{
@@ -892,7 +933,9 @@ body{
 
 @include breakpoint_mobile_480{
 
-
+    .fo_f{
+        font-size: 1rem;
+    }
     #header{
         
         .navbar{
@@ -938,7 +981,7 @@ body{
         width: 85%;
         right: -85%;
         #lnb{
-            padding: 75px 0;
+            padding:55px 0 0;
         }
     }
    

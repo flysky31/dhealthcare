@@ -488,7 +488,7 @@
   padding: 10px;
 }
 #about_area .history_bx li.depth05:after {
-  content: "2018~\A2019";
+  content: "2018~ \A 2019";
   position: absolute;
   top: 0;
   left: 50%;
@@ -528,7 +528,7 @@
   padding: 10px;
 }
 #about_area .history_bx li.depth07:after {
-  content: "2015~\A2016";
+  content: "2015~ \A 2016";
   position: absolute;
   top: 0;
   left: 50%;
@@ -588,7 +588,7 @@
   padding: 10px;
 }
 #about_area .history_bx li.depth10:after {
-  content: "2005~\A2009";
+  content: "2005~ \A 2009";
   position: absolute;
   top: 0;
   left: 50%;

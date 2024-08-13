@@ -289,11 +289,11 @@
 #about_area .title h4:after {
   content: "";
   position: absolute;
-  top: -4px;
+  top: -6px;
   left: 50%;
   transform: translateX(-50%);
   background: #003B82;
-  width: 85px;
+  width: 70px;
   height: 4px;
 }
 #about_area .img_bx {
@@ -663,11 +663,11 @@
 #location_wrap .title h3:after {
   content: "";
   position: absolute;
-  top: -4px;
+  top: -6px;
   left: 50%;
   transform: translateX(-50%);
   background: #003B82;
-  width: 85px;
+  width: 70px;
   height: 4px;
 }
 #location_wrap .flex {
@@ -785,11 +785,11 @@
 #certification_area .title h3:after {
   content: "";
   position: absolute;
-  top: -4px;
+  top: -6px;
   left: 50%;
   transform: translateX(-50%);
   background: #003B82;
-  width: 85px;
+  width: 70px;
   height: 4px;
 }
 #certification_area figure {

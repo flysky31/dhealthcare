@@ -489,6 +489,7 @@
 }
 #about_area .history_bx li.depth05:after {
   content: "2018~ \A 2019";
+  white-space:pre; 
   position: absolute;
   top: 0;
   left: 50%;
@@ -529,6 +530,7 @@
 }
 #about_area .history_bx li.depth07:after {
   content: "2015~ \A 2016";
+  white-space:pre; 
   position: absolute;
   top: 0;
   left: 50%;
@@ -589,6 +591,7 @@
 }
 #about_area .history_bx li.depth10:after {
   content: "2005~ \A 2009";
+  white-space:pre; 
   position: absolute;
   top: 0;
   left: 50%;

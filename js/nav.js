@@ -91,14 +91,3 @@ $(document).ready(function() {
    
 });
     
-
- $(document).ready(function () {
-    var urlParams = new URLSearchParams(window.location.search);
-    var tabId = urlParams.get('tab') || 'tab1';  
-
-    $('.tab').removeClass('active');
-    $('.tab-pane').removeClass('active');
-
-    $('[data-tab="' + tabId + '"]').addClass('active');
-    $('#' + tabId).addClass('active');
-});

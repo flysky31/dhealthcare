@@ -692,20 +692,5 @@
             </footer>
         </div>
     </div>
-    <script>
-         $(document).ready(function () {
-            // 페이지 로드 시 URL의 쿼리 파라미터에서 탭 ID를 가져옵니다.
-            var urlParams = new URLSearchParams(window.location.search);
-            var tabId = urlParams.get('tab') || 'tab1';  // 기본 탭을 tab1으로 설정
-
-            // 모든 탭에서 active 클래스를 제거하고, 해당하는 탭에만 추가합니다.
-            $('.tab').removeClass('active');
-            $('.tab-pane').removeClass('active');
-
-            // URL 파라미터에 해당하는 탭을 활성화합니다.
-            $('[data-tab="' + tabId + '"]').addClass('active');
-            $('#' + tabId).addClass('active');
-        });
-    </script>
 </body>
 </html>

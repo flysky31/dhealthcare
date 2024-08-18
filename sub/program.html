@@ -960,7 +960,7 @@
     
             });
         });
-        
+        /*
         $(document).ready(function () {
             $('.tab').click(function () {
                 $('.tab').removeClass('active');
@@ -969,6 +969,33 @@
                 var tabId = $(this).data('tab');
                 $('#' + tabId).addClass('active');
             });
+        });
+        */
+            // 모든 탭 버튼에 클릭 이벤트 추가
+        document.querySelectorAll('.tab').forEach(button => {
+            button.addEventListener('click', function() {
+                const tabNumber = this.getAttribute('data-tab');
+                
+                // 모든 탭 내용을 숨김
+                document.querySelectorAll('.tab-pane').forEach(content => {
+                    content.style.display = 'none';
+                });
+
+                // 선택된 탭 내용 표시
+                document.getElementById('tab' + tabNumber).style.display = 'block';
+
+                // URL에 해시 추가
+                window.location.hash = 'tab' + tabNumber;
+            });
+        });
+
+        // 페이지 로드 시 해시가 있으면 해당 탭을 활성화
+        window.addEventListener('load', function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const tabNumber = hash.replace('#tab', '');
+                document.querySelector('.tab[data-tab="' + tabNumber + '"]').click();
+            }
         });
     
     </script>

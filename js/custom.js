@@ -44,7 +44,7 @@ $(document).ready(function () {
     }
 });*/
 
- $(document).ready(function () {
+  $(document).ready(function () {
             // 탭 클릭 이벤트
             $('.tab').click(function (event) {
                 event.preventDefault(); // 링크 클릭 시 기본 동작 방지
@@ -74,5 +74,12 @@ $(document).ready(function () {
             } else {
                 // 기본 탭 활성화 (첫 번째 탭 등)
                 $('.tab').first().click();
+            }
+
+            // 페이지 로드 후 쿼리 파라미터 제거
+            if (window.location.search) {
+                var url = new URL(window.location);
+                url.search = ''; // 쿼리 파라미터 제거
+                history.replaceState(null, null, url);
             }
         });

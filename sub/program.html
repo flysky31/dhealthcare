@@ -248,11 +248,11 @@
                             <nav id="bo-cate">
                                 <h2>Product 카테고리</h2>
                                 <ul id="bo-cate-ul">                        
-                                    <li class="tab active" data-tab="tab1"><a href="#none" id="bo_cate_on">전체</a></li>
-                                    <li class="tab" data-tab="tab2"><a href="#none">스마트 너스콜</a></li>
-                                    <li class="tab" data-tab="tab3"><a href="#none">스마트 ID카드 E-TAG</a></li>
-                                    <li class="tab" data-tab="tab4"><a href="#none">스마트 수술실 솔루션</a></li>
-                                    <li class="tab" data-tab="tab5"><a href="#none">기타 스마트 시스템</a></li>        
+                                    <li class="tab active" data-tab="tab1">전체</a></li>
+                                    <li class="tab" data-tab="tab2">스마트 너스콜</a></li>
+                                    <li class="tab" data-tab="tab3">스마트 ID카드 E-TAG</a></li>
+                                    <li class="tab" data-tab="tab4">스마트 수술실 솔루션</a></li>
+                                    <li class="tab" data-tab="tab5">기타 스마트 시스템</a></li>        
                                 </ul>
                             </nav>
                             
@@ -971,27 +971,31 @@
             });
         });
         */
-    $(document).ready(function() {
-            // 탭 클릭 시 동작
-            $('.tab').on('click', function() {
-                var tabId = $(this).data('tab');
+       $(document).ready(function () {
+    // 탭 클릭 이벤트
+    $('.tab').click(function () {
+        // 모든 탭과 탭 콘텐츠에서 'active' 클래스 제거
+        $('.tab').removeClass('active');
+        $('.tab-pane').removeClass('active');
 
-                // 모든 탭 콘텐츠 숨기기
-                $('.tab-pane').hide();
+        // 클릭된 탭에 'active' 클래스 추가
+        $(this).addClass('active');
+        var tabId = $(this).data('tab');
 
-                // 클릭된 탭에 해당하는 콘텐츠 보여주기
-                $('#' + tabId).show();
+        // 해당 탭 콘텐츠에 'active' 클래스 추가
+        $('#' + tabId).addClass('active');
 
-                // URL 해시 변경
-                window.location.hash = tabId;
-            });
+        // URL 해시 변경
+        window.location.hash = tabId;
+    });
 
-            // 페이지 로드 시 현재 해시에 맞는 탭을 자동으로 선택
-            if (window.location.hash) {
-                var tabId = window.location.hash.replace('#', '');
-                $('.tab[data-tab="' + tabId + '"]').click();
-            }
-        });
+    // 페이지 로드 시 해시가 있으면 해당 탭 활성화
+    if (window.location.hash) {
+        var tabId = window.location.hash.replace('#', '');
+        $('.tab[data-tab="' + tabId + '"]').click();
+    }
+});
+
     
     </script>
 </body>

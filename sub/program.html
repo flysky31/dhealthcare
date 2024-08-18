@@ -971,30 +971,25 @@
             });
         });
         */
-            // 모든 탭 버튼에 클릭 이벤트 추가
-        document.querySelectorAll('.tab').forEach(button => {
-            button.addEventListener('click', function() {
-                const tabNumber = this.getAttribute('data-tab');
-                
-                // 모든 탭 내용을 숨김
-                document.querySelectorAll('.tab-pane').forEach(content => {
-                    content.style.display = 'none';
-                });
+    $(document).ready(function() {
+            // 탭 클릭 시 동작
+            $('.tab').on('click', function() {
+                var tabId = $(this).data('tab');
 
-                // 선택된 탭 내용 표시
-                document.getElementById('tab' + tabNumber).style.display = 'block';
+                // 모든 탭 콘텐츠 숨기기
+                $('.tab-pane').hide();
 
-                // URL에 해시 추가
-                window.location.hash = 'tab' + tabNumber;
+                // 클릭된 탭에 해당하는 콘텐츠 보여주기
+                $('#' + tabId).show();
+
+                // URL 해시 변경
+                window.location.hash = tabId;
             });
-        });
 
-        // 페이지 로드 시 해시가 있으면 해당 탭을 활성화
-        window.addEventListener('load', function() {
-            const hash = window.location.hash;
-            if (hash) {
-                const tabNumber = hash.replace('#tab', '');
-                document.querySelector('.tab[data-tab="' + tabNumber + '"]').click();
+            // 페이지 로드 시 현재 해시에 맞는 탭을 자동으로 선택
+            if (window.location.hash) {
+                var tabId = window.location.hash.replace('#', '');
+                $('.tab[data-tab="' + tabId + '"]').click();
             }
         });
     
